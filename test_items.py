@@ -17,4 +17,4 @@ class TestProductPage:
         time.sleep(5)
 
         # Проверяем наличие кнопки добавления товара в корзину
-        assert browser.find_element_by_css_selector("button.btn-add-to-basket")
+        assert browser.find_element_by_css_selector("button.btn-add-to-basket"), 'Кнопка "Добавить в корзину" не найдена!'
